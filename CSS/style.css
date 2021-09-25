@@ -288,12 +288,12 @@ img{
 
 @media screen and (min-width: 768px){
     .hero__video{
-       margin-top: 100px;
+       margin-top: 220px;
        width: 100%;
 }
 
 .hero-texto{
-    margin-top: -270px;
+    margin-top: -180px;
 }
 
 .hero-texto_cta{
@@ -310,13 +310,14 @@ img{
     }
 
     .hero__video{
-        margin-top: 90px;
+        margin-top: 140px;
         width: 100%;
         
     } 
     .hero-texto__titulo{
     font-size: 4.2rem;
-    margin-top: -50px;
+    margin-top: -100px;
+    
 }
 
     .hero-texto__titulo--linha-2{
