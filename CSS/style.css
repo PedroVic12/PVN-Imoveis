@@ -362,9 +362,10 @@ img{
 
 }
 @media screen and (min-width:768px) {
+    
+
     .sobre-c{
         display: flex;
-        flex-wrap: wrap;
         
     }
 
@@ -405,7 +406,7 @@ img{
     font-weight: 900;
     color: red;
     top: .5rem;
-    right: 212rem;
+    right: 202rem;
     animation:arrow .5s ease-in 0s infinite alternate
     
 }
@@ -413,14 +414,15 @@ img{
 
 @keyframes arrow {
     from{
-        right: 212rem
+        right: 202rem
     }
 
     to{
-        right: 214rem
+        right: 204rem
     }
     
 }
+
 
 .empreendimento{
     flex-shrink: 0;
@@ -432,7 +434,7 @@ img{
 }
 
 .empreendimento + .empreendimento{
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .empreendimento__info{
@@ -497,7 +499,7 @@ img{
 }
 
 .empreendimento2 + .empreendimento2{
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .info-footer_preço2{
@@ -545,17 +547,20 @@ img{
         }
 
         .empreendimento + .empreendimento{
-            margin: 0;
+           margin: 0;
         }
 
         .empreendimento:nth-child(n+3){
             margin-top: 3rem;
-            margin-left: 2rem;
         }
 }
 
 @media screen and (min-width: 1024px) {
     
+    .empreendimento + .empreendimento{
+        margin: 0;
+     }
+
     .empreendimento:nth-child(n+3){
         margin-top: 0;
     }
@@ -568,8 +573,13 @@ img{
 
 @media screen and (min-width: 1440px){
     .empreendimento + .empreendimento{
-        margin: 0;
+           margin-right: 30px;
+        }
+
+    .empreendimento:nth-child(n){
+        margin-top: 30px;
     }
+
 }
 
 
@@ -578,6 +588,7 @@ img{
 /**********************************/
 .newsletter-c{
     padding: 3rem 0;
+    
 }
 
 .newsletter-info_titulo{
@@ -613,7 +624,7 @@ img{
     letter-spacing: .3rem;
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (min-width: 575.98px) {
     .newsletter-c{
         display: flex;
         flex-wrap: wrap;
@@ -625,6 +636,16 @@ img{
         flex: 1 1 26rem;
     }
 
+}
+
+@media screen and (min-width: 1440px){
+    .newsletter-c{
+        margin-left: 300px;
+    }
+
+    .newsletter-form_sumit{
+        margin-left: 375px;
+    }
 }
 
 
@@ -745,17 +766,21 @@ footer{
 }
 
 
-.footer-icons{
+.footer-icon{
     justify-content: center;
-    
+    color: rgb(255, 251, 251);
+    text-decoration: none;
 }
 
-.footer-icons_icon {
-    color: rgb(255, 251, 251);
-    font-size: 2.8rem;
-    transition: var(--transition);
-    margin-right: -16.6rem;
+.footer-icons_icon{
+color: white;
+}
+.footer-icons{
+    margin: 20px;
+}
 
+.footer-icon li{
+    margin-bottom: 20px;
 }
 
 .footer-icons_icon:hover{
@@ -770,6 +795,78 @@ footer{
 
 .copyright{
     color: white;
+}
+
+.wppfooter{
+    color: #f77f00;
+    margin-top: 30px; 
+    text-transform: none;
+}
+
+.newsletter-form_sumit2{
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--clr-medium-green);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50px;
+    letter-spacing: .1rem;
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+
+.contatos-footer{
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    text-transform: none;
+}
+
+
+@media screen and (max-width: 320px){
+    .sobre-c__img{
+        margin-left: 70px;
+    }
+
+    .sobre-texto__titulo{
+        font-size: 1.5rem;
+    }
+
+    .empreendimentos::after{
+        content: "➔";
+        position: relative;
+        font-size: 3.6rem;
+        font-weight: 900;
+        color: red;
+        top: .5rem;
+        right: 205rem;
+        animation:arrow .5s ease-in 0s infinite alternate
+        
+    }
+    @keyframes arrow  {
+        from{
+            right: 205rem
+        }
+    
+        to{
+            right: 202rem
+        }
+        
+    }
+
+    .empreendimento2 {
+        flex-shrink: 0;
+        background: #003049;
+        max-width: 300px;
+        cursor: pointer;
+        box-shadow: var(--dark-shadow);
+        color: white;
+    }
+
+    .footer-list{
+    font-size: 1.0rem;
+    }
 }
 /**********************************/
 /* 10. Modal
