@@ -43,6 +43,7 @@ html{
 }
 
 body{
+   
     display: block;
     font-family: var(--ff-primary);
     background: var(--clr-background);
@@ -232,7 +233,7 @@ img{
 }
 
 .hero__video{
-    margin-top: 120px;
+    margin-top: 0px;
     position: absolute;
     width: 100%;
     height: 50.25%;
@@ -241,7 +242,7 @@ img{
 }
 
 .hero-texto{
-    margin-top: -250px;
+    margin-top: -350px;
     min-width: 17rem;
     padding: 1.0rem;
 
@@ -291,11 +292,12 @@ img{
 
 
 @media screen and (max-width: 375px) {
-    .hero__video{
-        margin-top: 80px;
+    body{
+        margin: 0;
     }
+    
     .hero-texto{
-        margin-top: -200px;
+        margin-top: -280px;
     }
 }
  
@@ -358,8 +360,14 @@ img{
 
 .sobre-c__img{
     height: min(360px);
-    margin-left: 120px;
+    margin-left: 100px;
 
+}
+
+@media screen and (min-width:413px){
+    .sobre-c__img{
+        margin-left: 120px;
+    }
 }
 @media screen and (min-width:768px) {
     
@@ -616,12 +624,19 @@ img{
     letter-spacing: .1rem;
     padding: 1.0rem;
     transition: var(--transition);
+    margin-left: 55px;
 
 
 }
 
 .newsletter-form_sumit:hover{
     letter-spacing: .3rem;
+}
+@media screen and (max-width: 321px){
+    .newsletter-form_sumit{
+        margin-left: 0px;
+    }
+
 }
 
 @media screen and (min-width: 575.98px) {
@@ -664,6 +679,7 @@ img{
     min-width: 20rem;
     cursor: pointer;
     overflow: hidden;
+    height: 60%;
 }
 
 .galeria-item_thumb{
@@ -683,10 +699,10 @@ img{
 
 .galeria-item_local{
     position: absolute;
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     font-weight: 900;
     left: 8.4rem;
-    bottom: 8.2rem;
+    bottom: 7.2rem;
     color: var(--clr-white);
     opacity: 0;
     z-index: 1;
@@ -740,7 +756,7 @@ img{
 
 footer{
     background: darkblue;
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 900;
     text-align: center;
     text-transform: capitalize;
@@ -751,8 +767,8 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 15px;
-    font-size: 1.2rem;
+    margin-left: -18px;
+    font-size: 1.1rem;
 }
 
 .footer-list_link{
@@ -801,6 +817,7 @@ color: white;
     color: #f77f00;
     margin-top: 30px; 
     text-transform: none;
+    padding: 1px;
 }
 
 .newsletter-form_sumit2{
@@ -824,7 +841,15 @@ color: white;
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
+    
+    body{
+        margin: 0;
+    }
+    .footer-list_link{
+       font-size: 14px;
+         
+    }
     .sobre-c__img{
         margin-left: 70px;
     }
@@ -871,3 +896,26 @@ color: white;
 /**********************************/
 /* 10. Modal
 /**********************************/
+.container-md{
+    padding-top: 25px;
+    background-color: darkblue;
+    color: white;
+    font-size: 21px;
+    text-transform: uppercase;
+    height: 120px;
+    align-items: center;
+}
+
+.listaboot{
+    list-style: disc;
+    padding: 1px;
+    font-size: 20px
+}
+@media screen and (min-width: 1000px){
+    .container-md{
+        padding: 10px;
+        font-size: 30px;
+        
+    }
+
+}
