@@ -223,6 +223,13 @@ img{
 
 }
 
+@media screen and (min-width: 1024px){
+    .navbar-header img {
+        margin-top: -10px;
+
+    }
+}
+
 /**********************************/
 /* 3. Hero
 /**********************************/
