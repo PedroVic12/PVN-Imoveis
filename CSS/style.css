@@ -168,7 +168,7 @@ background-image: linear-gradient(90deg, #0d05e3 0%, #0025d1 33%, #0058e6 66%, #
 
 .navbar-list__link:hover{
     background-color: #81E600;
-    padding-left: 2.6rem;
+    padding: 1.0rem;
 
 }
 
@@ -193,22 +193,21 @@ background-image: linear-gradient(90deg, #0d05e3 0%, #0025d1 33%, #0058e6 66%, #
         height: 150px;
     }
     .navbar-list{
-       
         font-size: 4.2rem;
     }
 
 
 }
-   
+@media screen and (min-width: 768px){
+    .navbar-header__toggle{
+        margin-left: 300px;
+    }
+}
+
 @media screen and (min-width: 868px) {
     .navbar-header{
         display: inline;
-        width: 280px;
-    }
-    .navbar-header img{
-        width: 100%;
-        margin-left: -22px;
-        object-fit: cover;
+        width: 400px;
     }
 
     .navbar-header__toggle{
@@ -226,30 +225,25 @@ background-image: linear-gradient(90deg, #0d05e3 0%, #0025d1 33%, #0058e6 66%, #
         justify-content: space-between;
         align-items: center;
         padding: .2rem 1.2rem;
-        height: 160px;
+        height: 120px;
     }
 
-    .navbar-header__toggle:hover{
-        background: none;
-        padding-left: 1.6rem;
-        color: #81E600;
-    }
-
+    
     .navbar-list{
-        width: 700px;
+        width: 1000px;
+        margin-top: -100px;
+        text-align: justify;
     }
     .hero-texto_cta {
         width: 20rem;
-        font-size: 2.2rem;
-        
+        font-size: 2.0rem;
     }   
 
 }
 
-@media screen and (min-width: 1024px){
-    .navbar-header img {
-        margin-top: -10px;
-
+@media screen and (min-width: 1440px){
+    .navbar-list{
+        margin-left: 500px;
     }
 }
 
