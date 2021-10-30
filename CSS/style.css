@@ -43,7 +43,6 @@ html{
 }
 
 body{
-   
     display: block;
     font-family: var(--ff-primary);
     background: var(--clr-background);
@@ -95,38 +94,62 @@ img{
 
 .navbar{
     position:fixed;
-    background: #a2a1bd; 
+    background: #E6BF00; 
     width: 100%;
     box-shadow: var(--dark-shadow);
     z-index: 3;
-    margin-top: -10px;
+    height: 120px;
     
 }
 
 .navbar-header{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    
-    
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
 .navbar-header_logo{
-    width: 50%;
-    margin-left: -18px;
-    object-fit: cover;
-    border-left: rgb(0, 0, 158) 35px solid;
-    
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Tenor Sans', sans-serif;
+    background-color: #0d05e3;
+background-image: linear-gradient(90deg, #0d05e3 0%, #0025d1 33%, #0058e6 66%, #0d9afc 100%);
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
+.navbar-header_logo2{
+    font-size: 31px;
+    font-weight: 900;
+    font-family: 'Tenor Sans', sans-serif;
+    margin-top: -30px;
+    margin-left: 4px;
+    background-color: #0d05e3;
+background-image: linear-gradient(90deg, #0d05e3 0%, #0025d1 33%, #0058e6 66%, #0d9afc 100%);
+
+
+
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
 .navbar-header__toggle{
     background: transparent;
     border: transparent;
     font-size: 3.0rem;
-    color: var(--clr-medium-green);
+    color: #81E600;
     cursor: pointer;
     transition: var(--transition);
-    margin-right: 30px;
 }
 
 .navbar-header__toggle:hover{
@@ -144,7 +167,7 @@ img{
 }
 
 .navbar-list__link:hover{
-    background-color: var(--clr-medium-green);
+    background-color: #81E600;
     padding-left: 2.6rem;
 
 }
@@ -209,7 +232,7 @@ img{
     .navbar-header__toggle:hover{
         background: none;
         padding-left: 1.6rem;
-        color: var(--clr-medium-green);
+        color: #81E600;
     }
 
     .navbar-list{
@@ -258,7 +281,7 @@ img{
 .hero-texto__titulo{
     font-size: 1.4rem;
     font-weight:900;
-    color: rgb(4, 0, 255);
+    color: #114cfa;
     text-transform:uppercase;
 
 }
@@ -266,7 +289,7 @@ img{
 .hero-texto__titulo--linha-2{
     font-size: 1.0rem;
     font-weight:900;
-    color: rgb(255, 0, 0);
+    color: #FF3300;
     text-transform:uppercase;
 }
 
@@ -286,7 +309,7 @@ img{
     color:var(--clr-white);
     width: 14rem;
     text-align: center;
-    background: var(--clr-medium-green);
+    background: #81E600;
     padding: 1.0rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -408,12 +431,12 @@ img{
 
 .section__titulo{
     font-size: 2.0rem;
-    color: red;
+    color: #FF3300;
 }
 
 .section__titulo2{
     font-size: 2.5rem;
-    color: blue;
+    color:#114cfa;
     font-weight: 900;
     text-align: center;
     margin-bottom: 20px;
@@ -424,7 +447,7 @@ img{
     position: relative;
     font-size: 3.6rem;
     font-weight: 900;
-    color: red;
+    color: #FF3300;
     top: .5rem;
     right: 202rem;
     animation:arrow .5s ease-in 0s infinite alternate
@@ -629,7 +652,7 @@ img{
     font-size: 1.4rem;
     font-weight: 900;
     text-transform: uppercase;
-    background-color: var(--clr-medium-green);
+    background-color: #81E600;
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 50px;
@@ -792,7 +815,7 @@ footer{
 }
 
 .footer-list_link:hover{
-    color: yellowgreen;
+    color: #81E600;
 }
 
 
@@ -814,7 +837,7 @@ color: white;
 }
 
 .footer-icons_icon:hover{
-    color: yellowgreen;
+    color: #81E600;
 }
 
 
@@ -838,7 +861,7 @@ color: white;
     font-size: 0.9rem;
     font-weight: 900;
     text-transform: uppercase;
-    background-color: var(--clr-medium-green);
+    background-color: #81E600;
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 50px;
@@ -877,7 +900,7 @@ color: white;
         position: relative;
         font-size: 3.6rem;
         font-weight: 900;
-        color: red;
+        color: #FF3300;
         top: .5rem;
         right: 205rem;
         animation:arrow .5s ease-in 0s infinite alternate
@@ -896,7 +919,7 @@ color: white;
 
     .empreendimento2 {
         flex-shrink: 0;
-        background: #003049;
+        background: #00134A;
         max-width: 300px;
         cursor: pointer;
         box-shadow: var(--dark-shadow);
@@ -912,7 +935,7 @@ color: white;
 /**********************************/
 .container-md{
     padding-top: 25px;
-    background-color: darkblue;
+    background-color: #114cfa;
     color: white;
     font-size: 21px;
     text-transform: uppercase;
